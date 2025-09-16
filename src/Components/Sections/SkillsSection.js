@@ -16,7 +16,13 @@ const SkillsSection = () => {
           <FlexibleCard
             title="Languages"
             icon={FaCode}
-            skills={["JavaScript (ES6+)", "TypeScript", "Python", "C#"]}
+            skills={[
+              "JavaScript (ES6+)",
+              "TypeScript",
+              "Python",
+              "HTML",
+              "CSS",
+            ]}
             cardGradient="from-slate-800/50 to-blue-900/50"
             showButton={false}
           />
@@ -24,7 +30,14 @@ const SkillsSection = () => {
           <FlexibleCard
             title="Frameworks"
             icon={FaServer}
-            skills={["Node.js", "Express.js", "React"]}
+            skills={[
+              "Node.js",
+              "NestJS",
+              "Express.js",
+              "React",
+              "Next",
+              "Angular",
+            ]}
             cardGradient="from-purple-900/50 to-slate-800/50"
           />
 
@@ -36,9 +49,20 @@ const SkillsSection = () => {
           />
 
           <FlexibleCard
-            title="Tools"
+            title="Tools & Libraries"
             icon={FaTools}
-            skills={["JWT & OAuth2", "Stripe", "Postman", "Git & GitHub"]}
+            skills={[
+              "JWT & OAuth2",
+              "Stripe",
+              "Paypal",
+              "Postman",
+              "Git & GitHub",
+              "Redux",
+              "Bootstrap",
+              "Tailwind",
+              "JQuery",
+              "testing & TDLS",
+            ]}
             cardGradient="from-orange-900/50 to-slate-800/50"
           />
         </div>
