@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="py-4 px-4 border-t border-gray-800">
       <div className="max-w-6xl mx-auto text-center space-y-2">
         <Paragraph className="text-gray-400">
-          © 2025 Anas Ali Abd Elmonaem. Built with passion and clean code.
+          © 2025 Anas Ali Elgebaly. Built with passion and clean code.
         </Paragraph>
 
         {/* Phone number */}

@@ -17,10 +17,13 @@ const Button = ({
 
   const gradientClasses = `bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:scale-105 shadow-lg hover:shadow-xl`;
   const solidClasses = `border-2 border-${color} text-${color} hover:bg-${color} hover:text-white`;
+  const isInternal = href.startsWith("#");
 
   return (
     <a
       href={href}
+      target={isInternal ? "_self" : "_blank"}
+      rel={isInternal ? undefined : "noreferrer"}
       className={`${baseClasses} ${
         gradient ? gradientClasses : solidClasses
       } ${className}`}
@@ -31,3 +34,5 @@ const Button = ({
 };
 
 export default Button;
+
+

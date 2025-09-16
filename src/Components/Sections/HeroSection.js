@@ -6,7 +6,7 @@ const HeroComponent = () => {
   return (
     <section className="min-h-screen relative flex flex-col items-center justify-center bg-black text-white px-4 overflow-hidden">
       {/* Background Gradient Pulse */}
-      <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-purple-600/20 animate-pulse"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-purple-600/20 animate-pulse pointer-events-none"></div>
 
       <div className="animate-fade-in space-y-6 flex flex-col items-center">
         {/* Profile Image */}
