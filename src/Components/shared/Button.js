@@ -1,4 +1,5 @@
 const Button = ({
+  onClick = () => {},
   children,
   href = "#",
   gradient = false,
@@ -27,6 +28,7 @@ const Button = ({
       className={`${baseClasses} ${
         gradient ? gradientClasses : solidClasses
       } ${className}`}
+      onClick={onClick}
     >
       {children}
     </a>
@@ -34,5 +36,3 @@ const Button = ({
 };
 
 export default Button;
-
-

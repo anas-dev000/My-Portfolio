@@ -1,4 +1,5 @@
 import { FaEnvelope, FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
+import { motion } from "framer-motion";
 import ContactCard from "../shared/ContactCard";
 import GradientTitle from "../shared/GradientTitle";
 import Paragraph from "../shared/Paragraph";
@@ -20,23 +21,34 @@ const ContactSection = () => {
 
         {/* Contact Cards */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <ContactCard
-            icon={FaEnvelope}
-            title="Send Email"
-            subtitle="anas.dev000@gmail.com"
-            href="mailto:anas.dev000@gmail.com"
-            gradientFrom="blue-600"
-            gradientTo="purple-600"
-          />
-
-          <ContactCard
-            icon={FaWhatsapp}
-            title="WhatsApp"
-            subtitle="+201050850441"
-            href="https://wa.me/201050850441"
-            gradientFrom="green-600"
-            gradientTo="teal-600"
-          />
+          {[
+            {
+              icon: FaEnvelope,
+              title: "Send Email",
+              subtitle: "anas.dev000@gmail.com",
+              href: "mailto:anas.dev000@gmail.com",
+              gradientFrom: "blue-600",
+              gradientTo: "purple-600",
+            },
+            {
+              icon: FaWhatsapp,
+              title: "WhatsApp",
+              subtitle: "+201050850441",
+              href: "https://wa.me/201050850441",
+              gradientFrom: "green-600",
+              gradientTo: "teal-600",
+            },
+          ].map((card, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: index * 0.2 }}
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <ContactCard {...card} />
+            </motion.div>
+          ))}
         </div>
 
         {/* Social Links */}
