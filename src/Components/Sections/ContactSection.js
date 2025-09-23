@@ -3,11 +3,31 @@ import { motion } from "framer-motion";
 import ContactCard from "../shared/ContactCard";
 import GradientTitle from "../shared/GradientTitle";
 import Paragraph from "../shared/Paragraph";
+import Footer from "./Footer";
+
+// Variants for container & items
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2, // delay بين العناصر
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 40 },
+  show: { opacity: 1, y: 0 },
+};
 
 const ContactSection = () => {
   return (
-    <section className="py-36 px-4 bg-gradient-to-r from-slate-900/50 to-purple-900/50">
-      <div className="max-w-4xl mx-auto text-center" id="contact">
+    <section
+      id="contact"
+      className="py-36 px-4 bg-gradient-to-r h-screen from-slate-900/50 to-purple-900/50"
+    >
+      <div className="max-w-4xl mx-auto text-center">
         <GradientTitle
           gradientWords={["Connect"]}
           className="text-4xl md:text-5xl mb-8"
@@ -20,7 +40,13 @@ const ContactSection = () => {
         </Paragraph>
 
         {/* Contact Cards */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <motion.div
+          className="grid md:grid-cols-2 gap-8 mb-12"
+          variants={containerVariants}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+        >
           {[
             {
               icon: FaEnvelope,
@@ -39,17 +65,11 @@ const ContactSection = () => {
               gradientTo: "teal-600",
             },
           ].map((card, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.2 }}
-              viewport={{ once: true, amount: 0.3 }}
-            >
+            <motion.div key={index} variants={itemVariants}>
               <ContactCard {...card} />
             </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {/* Social Links */}
         <div className="flex justify-center gap-6">
@@ -69,6 +89,7 @@ const ContactSection = () => {
           >
             <FaLinkedin className="w-6 h-6 text-white" />
           </a>
+          <Footer />
         </div>
       </div>
     </section>

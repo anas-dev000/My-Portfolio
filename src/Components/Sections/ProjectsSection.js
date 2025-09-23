@@ -5,6 +5,22 @@ import FlexibleCard from "../shared/FlexibleCard";
 import GradientTitle from "../shared/GradientTitle";
 import { projects } from "../../Data/projectsData";
 
+// Variants for animation
+const containerVariants = {
+  hidden: { opacity: 0 },
+  show: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.15,
+    },
+  },
+};
+
+const itemVariants = {
+  hidden: { opacity: 0, y: 40 },
+  show: { opacity: 1, y: 0 },
+};
+
 const ProjectsSection = () => {
   const [filter, setFilter] = useState("all");
 
@@ -12,22 +28,29 @@ const ProjectsSection = () => {
     filter === "all" ? projects : projects.filter((p) => p.category === filter);
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-r from-slate-900/50 to-purple-900/50">
-      <div className="max-w-7xl mx-auto" id="projects">
-        <GradientTitle
-          gradientWords={["Projects"]}
-          className="text-4xl md:text-5xl font-bold text-white text-center mb-16"
-        >
-          My Projects
-        </GradientTitle>
+    <section
+      id="projects"
+      className="py-20 px-4 bg-gradient-to-r from-slate-900/50 to-purple-900/50"
+    >
+      <motion.div
+        className="max-w-7xl mx-auto"
+        variants={containerVariants}
+        initial="hidden"
+        animate="show"
+      >
+        <motion.div variants={itemVariants}>
+          <GradientTitle
+            gradientWords={["Projects"]}
+            className="text-4xl md:text-5xl font-bold text-white text-center mb-16"
+          >
+            My Projects
+          </GradientTitle>
+        </motion.div>
 
         {/* Filter buttons */}
         <motion.div
           className="flex flex-wrap justify-center gap-3 pb-12"
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true, amount: 0.2 }}
+          variants={itemVariants}
         >
           {[
             { label: "All", value: "all" },
@@ -54,20 +77,17 @@ const ProjectsSection = () => {
         </motion.div>
 
         {/* Projects Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <motion.div
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
+          variants={containerVariants}
+        >
           {filteredProjects.map((project, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, y: 40 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: i * 0.1 }}
-              viewport={{ once: true, amount: 0.15 }}
-            >
+            <motion.div key={i} variants={itemVariants}>
               <FlexibleCard {...project} />
             </motion.div>
           ))}
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 };
