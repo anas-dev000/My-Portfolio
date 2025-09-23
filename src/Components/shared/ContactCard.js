@@ -28,3 +28,20 @@ const ContactCard = ({
 };
 
 export default ContactCard;
+
+            // {
+            //   icon: FaEnvelope,
+            //   title: "Send Email",
+            //   subtitle: "anas.dev000@gmail.com",
+            //   href: "https://mail.google.com/mail/?view=cm&fs=1&to=anas.dev000@gmail.com",
+            //   gradientFrom: "blue-600",
+            //   gradientTo: "purple-600",
+            // },
+            // {
+            //   icon: FaWhatsapp,
+            //   title: "WhatsApp",
+            //   subtitle: "+201050850441",
+            //   href: "https://wa.me/201050850441",
+            //   gradientFrom: "green-600",
+            //   gradientTo: "teal-600",
+            // },

@@ -1,9 +1,14 @@
-import { FaEnvelope, FaWhatsapp, FaGithub, FaLinkedin } from "react-icons/fa";
+import {
+  FaEnvelope,
+  FaWhatsapp,
+  FaGithub,
+  FaLinkedin,
+  FaPhone,
+} from "react-icons/fa";
 import { motion } from "framer-motion";
 import ContactCard from "../shared/ContactCard";
 import GradientTitle from "../shared/GradientTitle";
 import Paragraph from "../shared/Paragraph";
-import Footer from "./Footer";
 
 // Variants for container & items
 const containerVariants = {
@@ -11,7 +16,7 @@ const containerVariants = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.2, // delay بين العناصر
+      staggerChildren: 0.2,
     },
   },
 };
@@ -25,7 +30,7 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="py-36 px-4 bg-gradient-to-r h-screen from-slate-900/50 to-purple-900/50"
+      className="py-24 px-4 bg-gradient-to-r h-screen from-slate-900/50 to-purple-900/50"
     >
       <div className="max-w-4xl mx-auto text-center">
         <GradientTitle
@@ -52,7 +57,7 @@ const ContactSection = () => {
               icon: FaEnvelope,
               title: "Send Email",
               subtitle: "anas.dev000@gmail.com",
-              href: "mailto:anas.dev000@gmail.com",
+              href: "https://mail.google.com/mail/?view=cm&fs=1&to=anas.dev000@gmail.com",
               gradientFrom: "blue-600",
               gradientTo: "purple-600",
             },
@@ -72,7 +77,7 @@ const ContactSection = () => {
         </motion.div>
 
         {/* Social Links */}
-        <div className="flex justify-center gap-6">
+        <div className="flex flex-wrap justify-center gap-6 mb-8">
           <a
             href="https://github.com/anas-dev000"
             target="_blank"
@@ -89,7 +94,19 @@ const ContactSection = () => {
           >
             <FaLinkedin className="w-6 h-6 text-white" />
           </a>
-          <Footer />
+        </div>
+
+        {/* Footer */}
+        <div className="space-y-2">
+          <Paragraph className="text-gray-400 text-sm sm:text-base">
+            © 2025 Anas Ali Elgebaly. Built with passion and clean code.
+          </Paragraph>
+
+          {/* Phone number */}
+          <div className="flex items-center justify-center gap-2">
+            <span className="text-gray-200 font-medium">+20 105 085 0441</span>
+            <FaPhone className="w-5 h-5 text-white" />
+          </div>
         </div>
       </div>
     </section>
