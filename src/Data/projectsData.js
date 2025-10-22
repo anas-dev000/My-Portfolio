@@ -8,13 +8,28 @@ import {
 
 export const projects = [
   {
+    title: "Amlak Construction & Supplies",
+    subtitle: "Freelance Frontend Web",
+    description:
+      "A professional Arabic-only static corporate website built for Amlak Construction & Supplies, a leading engineering company with over 15 years of experience. Developed using React, Vite, TypeScript, Tailwind CSS, and Framer Motion, it delivers a fully RTL-optimized, mobile-first design with smooth modern animations, Dark/Light Mode support, and SEO-optimized semantic structure. The project showcases a high-end business presentation including services, projects gallery with popups, company profile, and seamless contact experience with WhatsApp integration and live Google Map.",
+    icon: FaReact,
+    imageSrc:
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1761092749/A59D5EC7-19A6-4430-A6A7-F36270B5FB9E_p4lcvf.png",
+    imageAlt: "Amlak Construction Website",
+    buttonHref: "https://amlak-company.vercel.app/",
+    showButton: true,
+    category: "frontend",
+  },
+
+  ,
+  {
     title: "Autism Awareness Platform",
     subtitle: "Freelance Frontend React",
     description:
       "This project is a responsive Arabic-language web platform created to raise awareness and provide resources for individuals with autism. Developed using React, Vite, and Framer Motion, it features a clean RTL layout, smooth animations, and accessible design principles to ensure an inclusive user experience. The app was structured with reusable modular components and is prepared for future backend API integration, making it both scalable and maintainable.",
     icon: FaReact,
     imageSrc:
-      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1758024921/Edrak_mn5hvv.jpg",
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1761092740/903FC777-2B79-4276-A61C-9DA9A4678A89_llibbw.png",
     imageAlt: "Autism Awareness Project",
     buttonHref: "https://autism-blog.vercel.app/",
     showButton: true,
@@ -27,7 +42,7 @@ export const projects = [
       "This project is a desktop cashier system designed for restaurants, built with CustomTkinter to provide a modern, user-friendly interface with full Arabic language support. It features role-based access control for cashiers and administrators, secured with an SQLite database that manages orders, products, categories, and user shifts dynamically. The system supports real-time order processing, customer management, and shift tracking, while ensuring reliable database connectivity across both development and production environments. Special care was taken to integrate proper Arabic text rendering using arabic_reshaper and bidi, delivering a seamless right-to-left experience.",
     icon: FaDesktop,
     imageSrc:
-      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1758024804/SystemPOS_pi0m5i.jpg",
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1761092749/C2410D58-CBC0-4EBC-B7B3-86E573246C41_fjzyaw.png",
     imageAlt: "Restaurant POS System",
     buttonHref:
       "https://www.linkedin.com/posts/anas-elgebaly000_%D8%AC%D8%A7%D9%84%D9%8A-%D8%B7%D9%84%D8%A8-%D9%85%D9%86-%D8%B5%D8%AF%D9%8A%D9%82-%D8%A5%D9%86%D9%8A-%D8%A3%D8%B9%D9%85%D9%84-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D9%83%D8%A7%D8%B4%D9%8A%D8%B1-%D9%84%D9%85%D8%B7%D8%B9%D9%85-activity-7331315296965640194-ES26",
@@ -41,7 +56,7 @@ export const projects = [
       "This project is a modern movie browsing website developed with Angular 20, built as a practice project to enhance my skills in building scalable front-end applications. It integrates with the TMDb API to fetch and display real-time movie data, including details, trailers, and recommendations. The app features a responsive design, dark mode support, internationalization, and a personalized watchlist stored in LocalStorage. By developing this project, I focused on improving my understanding of Angular’s core concepts, API handling, state management, and creating a smooth user experience with dynamic and SEO-friendly content.",
     icon: FaJs,
     imageSrc:
-      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1758024924/moveis_gx3fzs.jpg",
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1761092752/30A2CA62-3A02-40B3-9166-149B059B646D_xcqhzu.png",
     imageAlt: "Movie Cinema",
     buttonHref: "https://movie-angular-app.vercel.app",
     showButton: true,
@@ -56,11 +71,10 @@ export const projects = [
     buttonHref: "https://silly-halva-53f3d5.netlify.app/",
     showButton: true,
     imageSrc:
-      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1758024921/masera_fjhydd.jpg",
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1761092740/F70AFC3D-5CF5-4A84-A027-010ECF43ACCC_cstdzb.png",
     imageAlt: "Prophets Journey Website",
     category: "frontend",
-  }
-  ,
+  },
   {
     title: "Intelligent Hardware Recommendation System",
     subtitle: "Graduation Project",
@@ -71,6 +85,16 @@ export const projects = [
       "https://github.com/anas-dev000/Akhtarly---Hardware-Recommendation-System",
     showButton: true,
     category: "backend",
+  },
+  {
+    title: "GraphQL Dashboard Management System",
+    subtitle: "Training Full Stack GraphQL",
+    description:
+      "A full-stack dashboard application built using GraphQL, React, and Node.js to manage users and companies with clean and modern UI/UX. The app features a responsive tab-based interface with CRUD operations for users and companies, real-time UI updates using Apollo Client, and an optimized backend with DataLoader for batching MongoDB queries. Designed with Tailwind CSS for a professional dashboard experience, this project demonstrates expertise in GraphQL schema design, client-server communication, and scalable full-stack architecture.",
+    icon: FaServer,
+    buttonHref: "https://github.com/anas-dev000/graphql-dashboard-app",
+    showButton: true,
+    category: "fullstack",
   },
   {
     title: "Hotel Management System API",
