@@ -8,13 +8,27 @@ import {
 
 export const projects = [
   {
+    title: "Faltarah System – فلترة",
+    subtitle: "Freelance Full Stack Multi-Company Platform",
+    description:
+      "A powerful multi-tenant management system built for water filter & AC maintenance companies. Features full Arabic RTL support, role-based dashboards (Manager & Employee), comprehensive business operations (clients, invoices, installments, maintenance, products, suppliers, reports), automated subscription handling with free trial, cron-based email reminders, and data cleanup for expired trials. Includes AI-powered natural language reporting, PDF invoice/report generation, real-time charts, and a fully independent data structure per company. Tech stack: Fastify + Prisma + PostgreSQL (Backend), React + Tailwind + Framer Motion (Manager/Employee Dashboard), Angular 20 + Bootstrap (Admin & Landing), Puppeteer, Nodemailer, JWT, Cloudinary.",
+    icon: FaServer,
+    imageSrc:
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1764537308/Gemini_Generated_Image_n3jgiin3jgiin3jg_muga2i.png",
+    imageAlt: "Faltarah System Dashboard",
+    buttonHref: "https://lnkd.in/dYZ4deDc",
+    showButton: true,
+    category: "frontend",
+  },
+
+  {
     title: "Amlak Construction & Supplies",
     subtitle: "Freelance Frontend Web",
     description:
       "A professional Arabic-only static corporate website built for Amlak Construction & Supplies, a leading engineering company with over 15 years of experience. Developed using React, Vite, TypeScript, Tailwind CSS, and Framer Motion, it delivers a fully RTL-optimized, mobile-first design with smooth modern animations, Dark/Light Mode support, and SEO-optimized semantic structure. The project showcases a high-end business presentation including services, projects gallery with popups, company profile, and seamless contact experience with WhatsApp integration and live Google Map.",
     icon: FaReact,
     imageSrc:
-      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1761092749/A59D5EC7-19A6-4430-A6A7-F36270B5FB9E_p4lcvf.png",
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1764538668/Gemini_Generated_Image_t3ma38t3ma38t3ma_fx9oql.png",
     imageAlt: "Amlak Construction Website",
     buttonHref: "https://amlak-company.vercel.app/",
     showButton: true,
@@ -29,7 +43,7 @@ export const projects = [
       "This project is a responsive Arabic-language web platform created to raise awareness and provide resources for individuals with autism. Developed using React, Vite, and Framer Motion, it features a clean RTL layout, smooth animations, and accessible design principles to ensure an inclusive user experience. The app was structured with reusable modular components and is prepared for future backend API integration, making it both scalable and maintainable.",
     icon: FaReact,
     imageSrc:
-      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1761092740/903FC777-2B79-4276-A61C-9DA9A4678A89_llibbw.png",
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1764539588/Gemini_Generated_Image_z63twbz63twbz63t_zz6xln.png",
     imageAlt: "Autism Awareness Project",
     buttonHref: "https://autism-blog.vercel.app/",
     showButton: true,
