@@ -1,3 +1,4 @@
+import { useState } from "react";
 import GradientImage from "./GradientImage";
 import Paragraph from "./Paragraph";
 import GradientTitle from "./GradientTitle";
@@ -20,6 +21,13 @@ const FlexibleCard = ({
   showButton = false,
   cardGradient = "from-slate-800/80 to-purple-900/40",
 }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  // Truncate description to first 100 characters
+  const truncatedDescription = description?.length > 100 
+    ? description.substring(0, 100) + "..." 
+    : description;
+
   return (
     <div
       className={`bg-gradient-to-br ${cardGradient} p-6 md:p-8 rounded-3xl backdrop-blur-sm border border-purple-500/20 hover:scale-105 hover:border-purple-400/40 transition-all duration-300 group flex flex-col h-full`}
@@ -62,8 +70,23 @@ const FlexibleCard = ({
         />
       )}
 
-      {/* Description */}
-      {description && <Paragraph className="pt-3">{description}</Paragraph>}
+      {/* Description with toggle */}
+      {description && (
+        <div>
+          <Paragraph className="pt-3">
+            {isExpanded ? description : truncatedDescription}
+          </Paragraph>
+          
+          {description.length > 100 && (
+            <button
+              onClick={() => setIsExpanded(!isExpanded)}
+              className="text-purple-400 hover:text-purple-300 text-sm font-medium mt-2 transition-colors duration-200"
+            >
+              {isExpanded ? "Read Less" : "Read More"}
+            </button>
+          )}
+        </div>
+      )}
 
       {/* Skills */}
       {skills && skills.length > 0 && (
