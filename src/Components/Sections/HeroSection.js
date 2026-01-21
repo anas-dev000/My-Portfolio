@@ -51,6 +51,7 @@ const HeroComponent = () => {
         <div className="flex flex-row justify-center items-center gap-3">
           <Link to={"/projects"}>
             <Button
+              asButton={true}
               gradient
               className="px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base"
             >
@@ -59,6 +60,7 @@ const HeroComponent = () => {
           </Link>
           <Link to={"/contact"}>
             <Button
+              asButton={true}
               color="purple-400"
               className="px-4 py-2 text-[1rem] sm:px-6 sm:py-3 sm:text-base"
             >
