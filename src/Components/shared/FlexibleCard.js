@@ -61,7 +61,7 @@ const FlexibleCard = ({
 
       {/* Image - Fixed height */}
       {imageSrc && (
-        <div className="mb-4 md:mb-6 h-48 overflow-hidden rounded-xl">
+        <div className="mb-4 md:mb-6 h-64 overflow-hidden rounded-xl">
           <img
             src={imageSrc}
             alt={imageAlt}
