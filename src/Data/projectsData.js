@@ -8,6 +8,33 @@ import {
 
 export const projects = [
   {
+    title: "OrderUp Now – نظام طلبات المطاعم",
+    subtitle: "Freelance Full Stack WhatsApp Ordering System",
+    description:
+      "A complete restaurant management platform that enables seamless WhatsApp ordering experience. Built with React, TypeScript, Node.js, Express, and MongoDB, featuring unlimited products and categories, professional digital menus with QR code generation, real-time order tracking, Cloudinary image hosting, comprehensive admin dashboard with analytics, subscription management system, JWT authentication, and email notifications. Empowers restaurants to digitize their operations and receive orders directly via WhatsApp with zero setup hassle.",
+    icon: FaServer,
+    imageSrc:
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1768977155/IMG_4351_llg2ly.jpg",
+    imageAlt: "OrderUp Now Restaurant System",
+    buttonHref: "https://orderup-now.vercel.app/",
+    showButton: true,
+    category: "Full Stack",
+  },
+  
+  {
+    title: "Garden Management System – Tilal Kingdom",
+    subtitle: "Freelance Full Stack Enterprise Platform",
+    description:
+      "A comprehensive garden maintenance and landscaping management platform built for multi-branch operations. Developed with React, Node.js, Express, MongoDB, and Socket.io, featuring role-based dashboards (Admin, Worker, Client, Accountant), advanced task management with photo documentation, real-time notifications via email and WhatsApp, inventory tracking, invoice generation with PDF export, multi-language support (English, Arabic, Bengali) with RTL layout, Cloudinary media storage, React Query for optimized data fetching, and complete authentication system with JWT. Streamlines garden business operations from client onboarding to payment processing.",
+    icon: FaServer,
+    imageSrc:
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1768978466/29F2CCE4-FE30-41E3-965F-82CA8922B219_eo4ksb.jpg",
+    imageAlt: "Garden Management System Tilal",
+    buttonHref: "https://telal-kingdom.com/",
+    showButton: true,
+    category: "Full Stack",
+  },
+  {
     title: "Faltarah System – فلترة",
     subtitle: "Freelance Full Stack Multi-Company Platform",
     description:
@@ -18,7 +45,7 @@ export const projects = [
     imageAlt: "Faltarah System Dashboard",
     buttonHref: "https://faltra-system.vercel.app/",
     showButton: true,
-    category: "frontend",
+    category: "Full Stack",
   },
 
   {
@@ -35,33 +62,6 @@ export const projects = [
     category: "frontend",
   },
 
-  {
-    title: "OrderUp Now – نظام طلبات المطاعم",
-    subtitle: "Freelance Full Stack WhatsApp Ordering System",
-    description:
-      "A complete restaurant management platform that enables seamless WhatsApp ordering experience. Built with React, TypeScript, Node.js, Express, and MongoDB, featuring unlimited products and categories, professional digital menus with QR code generation, real-time order tracking, Cloudinary image hosting, comprehensive admin dashboard with analytics, subscription management system, JWT authentication, and email notifications. Empowers restaurants to digitize their operations and receive orders directly via WhatsApp with zero setup hassle.",
-    icon: FaServer,
-    imageSrc:
-      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1768977155/IMG_4351_llg2ly.jpg",
-    imageAlt: "OrderUp Now Restaurant System",
-    buttonHref: "https://orderup-now.vercel.app/",
-    showButton: true,
-    category: "fullstack",
-  },
-
-  {
-    title: "Garden Management System – Tilal Kingdom",
-    subtitle: "Freelance Full Stack Enterprise Platform",
-    description:
-      "A comprehensive garden maintenance and landscaping management platform built for multi-branch operations. Developed with React, Node.js, Express, MongoDB, and Socket.io, featuring role-based dashboards (Admin, Worker, Client, Accountant), advanced task management with photo documentation, real-time notifications via email and WhatsApp, inventory tracking, invoice generation with PDF export, multi-language support (English, Arabic, Bengali) with RTL layout, Cloudinary media storage, React Query for optimized data fetching, and complete authentication system with JWT. Streamlines garden business operations from client onboarding to payment processing.",
-    icon: FaServer,
-    imageSrc:
-      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1768978466/29F2CCE4-FE30-41E3-965F-82CA8922B219_eo4ksb.jpg",
-    imageAlt: "Garden Management System Tilal",
-    buttonHref: "https://telal-kingdom.com/",
-    showButton: true,
-    category: "fullstack",
-  },
 
   {
     title: "Autism Awareness Platform",
