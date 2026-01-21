@@ -56,7 +56,7 @@ const ProjectsSection = () => {
             { label: "All", value: "all" },
             { label: "Frontend", value: "frontend" },
             { label: "Backend", value: "backend" },
-            { label: "Desktop", value: "desktop" },
+            { label: "Full Stack", value: "Full Stack" },
           ].map((btn, i) => (
             <button
               key={i}

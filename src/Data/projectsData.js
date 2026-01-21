@@ -35,7 +35,34 @@ export const projects = [
     category: "frontend",
   },
 
-  ,
+  {
+    title: "OrderUp Now – نظام طلبات المطاعم",
+    subtitle: "Freelance Full Stack WhatsApp Ordering System",
+    description:
+      "A complete restaurant management platform that enables seamless WhatsApp ordering experience. Built with React, TypeScript, Node.js, Express, and MongoDB, featuring unlimited products and categories, professional digital menus with QR code generation, real-time order tracking, Cloudinary image hosting, comprehensive admin dashboard with analytics, subscription management system, JWT authentication, and email notifications. Empowers restaurants to digitize their operations and receive orders directly via WhatsApp with zero setup hassle.",
+    icon: FaServer,
+    imageSrc:
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1768977155/IMG_4351_llg2ly.jpg",
+    imageAlt: "OrderUp Now Restaurant System",
+    buttonHref: "https://orderup-now.vercel.app/",
+    showButton: true,
+    category: "fullstack",
+  },
+
+  {
+    title: "Garden Management System – Tilal Kingdom",
+    subtitle: "Freelance Full Stack Enterprise Platform",
+    description:
+      "A comprehensive garden maintenance and landscaping management platform built for multi-branch operations. Developed with React, Node.js, Express, MongoDB, and Socket.io, featuring role-based dashboards (Admin, Worker, Client, Accountant), advanced task management with photo documentation, real-time notifications via email and WhatsApp, inventory tracking, invoice generation with PDF export, multi-language support (English, Arabic, Bengali) with RTL layout, Cloudinary media storage, React Query for optimized data fetching, and complete authentication system with JWT. Streamlines garden business operations from client onboarding to payment processing.",
+    icon: FaServer,
+    imageSrc:
+      "https://res.cloudinary.com/dbgthgcgh/image/upload/v1768978466/29F2CCE4-FE30-41E3-965F-82CA8922B219_eo4ksb.jpg",
+    imageAlt: "Garden Management System Tilal",
+    buttonHref: "https://telal-kingdom.com/",
+    showButton: true,
+    category: "fullstack",
+  },
+
   {
     title: "Autism Awareness Platform",
     subtitle: "Freelance Frontend React",
@@ -61,7 +88,7 @@ export const projects = [
     buttonHref:
       "https://www.linkedin.com/posts/anas-elgebaly000_%D8%AC%D8%A7%D9%84%D9%8A-%D8%B7%D9%84%D8%A8-%D9%85%D9%86-%D8%B5%D8%AF%D9%8A%D9%82-%D8%A5%D9%86%D9%8A-%D8%A3%D8%B9%D9%85%D9%84-%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D9%83%D8%A7%D8%B4%D9%8A%D8%B1-%D9%84%D9%85%D8%B7%D8%B9%D9%85-activity-7331315296965640194-ES26",
     showButton: true,
-    category: "desktop",
+    category: "Full Stack",
   },
   {
     title: "Angular Movie Website",

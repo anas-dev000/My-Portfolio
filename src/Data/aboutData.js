@@ -21,7 +21,7 @@ const aboutData = {
       "Develop responsive UIs with React & Angular, supporting RTL and accessibility.",
       "Design and optimize databases for performance and scalability.",
       "Apply clean architecture & TDD for maintainable, testable systems.",
-      "Deliver end-to-end solutions from e-commerce APIs to desktop and educational platforms.",
+      "Deliver end-to-end solutions from e-commerce APIs to Full Stack and educational platforms.",
     ],
   },
 };
