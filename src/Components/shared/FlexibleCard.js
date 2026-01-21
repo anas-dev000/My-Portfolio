@@ -1,5 +1,4 @@
 import { useState } from "react";
-import GradientImage from "./GradientImage";
 import Paragraph from "./Paragraph";
 import GradientTitle from "./GradientTitle";
 import Button from "./Button";
