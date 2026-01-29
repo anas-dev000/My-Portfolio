@@ -43,7 +43,7 @@ export const projects = [
     imageSrc:
       "https://res.cloudinary.com/dbgthgcgh/image/upload/v1764537308/Gemini_Generated_Image_n3jgiin3jgiin3jg_muga2i.png",
     imageAlt: "Faltarah System Dashboard",
-    buttonHref: "https://faltra-system.vercel.app/",
+    buttonHref: "https://faltrah.cloud",
     showButton: true,
     category: "Full Stack",
   },
