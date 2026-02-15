@@ -57,7 +57,7 @@ export const projects = [
     imageSrc:
       "https://res.cloudinary.com/dbgthgcgh/image/upload/v1764538668/Gemini_Generated_Image_t3ma38t3ma38t3ma_fx9oql.png",
     imageAlt: "Amlak Construction Website",
-    buttonHref: "https://amlak-company.vercel.app/",
+    buttonHref: "https://www.amlak.company",
     showButton: true,
     category: "frontend",
   },
