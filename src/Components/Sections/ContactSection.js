@@ -3,7 +3,6 @@ import {
   FaWhatsapp,
   FaGithub,
   FaLinkedin,
-  FaPhone,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import ContactCard from "../shared/ContactCard";
