@@ -11,7 +11,7 @@ const fadeInUp = {
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 px-4">
+    <section id="about" className="pt-6 pb-20 md:pt-8 md:pb-20 md:-mt-6 px-4">
       <div className="max-w-6xl mx-auto">
         <GradientTitle
           className="text-4xl md:text-5xl text-center mb-16"

@@ -6,8 +6,8 @@ const GradientImage = ({
 }) => {
   const shapeClass =
     shape === "circle"
-      ? "rounded-full w-44 h-44 sm:w-48 sm:h-48 lg:w-60 lg:h-60"
-      : "rounded-2xl w-full h-48 sm:h-56 md:h-64 lg:h-72";
+      ? "rounded-full w-32 h-32 xs:w-44 xs:h-44 sm:w-48 sm:h-48 lg:w-60 lg:h-60"
+      : "rounded-2xl w-full h-40 sm:h-56 md:h-64 lg:h-72";
 
   return (
     <div

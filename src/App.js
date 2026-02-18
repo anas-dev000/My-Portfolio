@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Navbar from "./Components/shared/Navbar"; 
+import Navbar from "./Components/shared/Navbar";
 import Layout from "./Components/shared/Layout";
+import ScrollToTop from "./Components/shared/ScrollToTop";
 import HeroComponent from "./Components/Sections/HeroSection";
 import AboutSection from "./Components/Sections/AboutSection";
 import ProjectsSection from "./Components/Sections/ProjectsSection";
@@ -10,6 +11,7 @@ import ContactSection from "./Components/Sections/ContactSection";
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route element={<Layout />}>

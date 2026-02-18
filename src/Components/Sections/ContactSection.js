@@ -9,6 +9,7 @@ import { motion } from "framer-motion";
 import ContactCard from "../shared/ContactCard";
 import GradientTitle from "../shared/GradientTitle";
 import Paragraph from "../shared/Paragraph";
+import Footer from "./Footer";
 
 // Variants for container & items
 const containerVariants = {
@@ -30,7 +31,10 @@ const ContactSection = () => {
   return (
     <section
       id="contact"
-      className="py-24 px-4 bg-gradient-to-r h-screen from-slate-900/50 to-purple-900/50"
+      className="px-4 overflow-hidden flex flex-col justify-center"
+      style={{
+        height: "calc(100vh - var(--bottom-nav-height) - var(--top-nav-height))",
+      }}
     >
       <div className="max-w-4xl mx-auto text-center">
         <GradientTitle
@@ -40,13 +44,13 @@ const ContactSection = () => {
           Let's Connect
         </GradientTitle>
 
-        <Paragraph className="mb-12 text-xl text-gray-300">
+        <Paragraph className="mb-6 md:mb-12 text-lg md:text-xl text-gray-300">
           Ready to bring your ideas to life? Let's discuss your next project.
         </Paragraph>
 
         {/* Contact Cards */}
         <motion.div
-          className="grid md:grid-cols-2 gap-8 mb-12"
+          className="grid md:grid-cols-2 gap-4 md:gap-8 mb-6 md:mb-12"
           variants={containerVariants}
           initial="hidden"
           whileInView="show"
@@ -58,16 +62,17 @@ const ContactSection = () => {
               title: "Send Email",
               subtitle: "anas.dev000@gmail.com",
               href: "https://mail.google.com/mail/?view=cm&fs=1&to=anas.dev000@gmail.com",
-              gradientFrom: "blue-600",
-              gradientTo: "purple-600",
+              gradientFrom: "from-blue-600",
+              gradientTo: "to-purple-600",
             },
             {
               icon: FaWhatsapp,
               title: "WhatsApp",
               subtitle: "+201050850441",
               href: "https://wa.me/201050850441",
-              gradientFrom: "green-600",
-              gradientTo: "teal-600",
+              gradientFrom: "from-green-400",
+              gradientTo: "to-green-600",
+              border: "border-white/50",
             },
           ].map((card, index) => (
             <motion.div key={index} variants={itemVariants}>
@@ -96,18 +101,7 @@ const ContactSection = () => {
           </a>
         </div>
 
-        {/* Footer */}
-        <div className="space-y-2">
-          <Paragraph className="text-gray-400 text-sm sm:text-base">
-            © 2025 Anas Ali Elgebaly. Built with passion and clean code.
-          </Paragraph>
-
-          {/* Phone number */}
-          <div className="flex items-center justify-center gap-2">
-            <span className="text-gray-200 font-medium">+20 105 085 0441</span>
-            <FaPhone className="w-5 h-5 text-white" />
-          </div>
-        </div>
+        <Footer />
       </div>
     </section>
   );

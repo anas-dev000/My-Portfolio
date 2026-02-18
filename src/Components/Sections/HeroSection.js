@@ -8,12 +8,10 @@ const HeroComponent = () => {
   return (
     <section
       id="home"
-      className="min-h-screen relative flex flex-col items-center justify-center bg-black text-white px-4 overflow-hidden xl:pt-12"
+      className="relative min-h-screen flex items-center justify-center -mt-6 md:-mt-16 overflow-x-hidden"
     >
-      {/* Background Gradient Pulse */}
-      <div className="absolute inset-0 bg-gradient-to-t from-blue-600/20 to-purple-600/20  pointer-events-none"></div>
 
-      <div className="animate-fade-in space-y-6 flex flex-col items-center">
+      <div className="animate-fade-in space-y-4 md:space-y-6 flex flex-col items-center w-full px-2">
         {/* Profile Image */}
         <GradientImage
           className="z-50"
@@ -25,44 +23,46 @@ const HeroComponent = () => {
         {/* Name */}
         <GradientTitle
           gradientWords={["Anas", "Ali", "Elgebaly"]}
-          className="text-4xl sm:text-5xl md:text-6xl leading-tight"
+          className="text-3xl sm:text-5xl md:text-6xl leading-tight text-center"
         >
           Anas Ali Elgebaly
         </GradientTitle>
 
         {/* Subtitle */}
-        <GradientTitle
-          as="h2"
-          gradientWords={[]}
-          defaultColor="white"
-          className="text-xl sm:text-2xl md:text-3xl leading-snug animate-typing inline-block overflow-hidden whitespace-nowrap mt-2"
-        >
-          Software Engineer
-        </GradientTitle>
+        <div className="min-h-[2rem] flex justify-center w-full">
+          <GradientTitle
+            as="h2"
+            gradientWords={[]}
+            defaultColor="white"
+            className="text-lg sm:text-2xl md:text-3xl leading-snug animate-typing inline-block overflow-hidden whitespace-nowrap mt-1"
+          >
+            Software Engineer
+          </GradientTitle>
+        </div>
 
         {/* About Me Paragraph */}
-        <Paragraph className="text-center max-w-md mx-auto">
+        <Paragraph className="text-center max-w-md mx-auto text-sm sm:text-base opacity-90">
           Creating responsive and scalable web applications using the MEARN
           stack. Focused on writing clean code and delivering impactful,
           real-world solutions.
         </Paragraph>
 
         {/* Buttons */}
-        <div className="flex flex-row justify-center items-center gap-3">
-          <Link to={"/projects"}>
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-3 w-full max-w-[280px] sm:max-w-none">
+          <Link to={"/projects"} className="w-full sm:w-auto">
             <Button
               asButton={true}
               gradient
-              className="px-4 py-2 text-sm sm:px-6 sm:py-3 sm:text-base"
+              className="w-full sm:w-auto px-4 py-3 text-sm sm:px-6 sm:py-3 sm:text-base"
             >
               View My Work
             </Button>
           </Link>
-          <Link to={"/contact"}>
+          <Link to={"/contact"} className="w-full sm:w-auto">
             <Button
               asButton={true}
               color="purple-400"
-              className="px-4 py-2 text-[1rem] sm:px-6 sm:py-3 sm:text-base"
+              className="w-full sm:w-auto px-4 py-3 text-sm sm:px-6 sm:py-3 sm:text-base"
             >
               Get In Touch
             </Button>

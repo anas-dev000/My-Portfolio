@@ -104,9 +104,9 @@ const FlexibleCard = ({
         )}
       </div>
 
-      {/* View Project button - Always at card bottom */}
+      {/* View Project button - Centered at bottom */}
       {showButton && buttonText && buttonHref && (
-        <div className="mt-6 pt-4 border-t border-purple-500/20">
+        <div className="mt-6 flex justify-center">
           <Button gradient href={buttonHref}>
             {buttonText}
           </Button>
