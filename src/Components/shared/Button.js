@@ -16,7 +16,7 @@ const Button = ({
    * asButton: true if you want to render as <button> (e.g., when inside Link)
    */
   const baseClasses =
-    "px-8 py-4 rounded-lg font-semibold transition-all duration-300";
+    "px-8 py-4 rounded-lg font-semibold transition-all duration-300 flex items-center justify-center text-center";
 
   const gradientClasses = `bg-gradient-to-r from-blue-600 to-purple-600 text-white hover:scale-105 shadow-lg hover:shadow-xl`;
   const solidClasses = `border-2 border-${color} text-${color} hover:bg-${color} hover:text-white`;
