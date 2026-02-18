@@ -58,15 +58,13 @@ const HeroComponent = () => {
               View My Work
             </Button>
           </Link>
-          <Link to={"/contact"} className="w-full sm:w-auto">
-            <Button
-              asButton={true}
-              color="purple-400"
-              className="w-full sm:w-auto px-4 py-3 text-sm sm:px-6 sm:py-3 sm:text-base"
-            >
-              Get In Touch
-            </Button>
-          </Link>
+          <Button
+            href="https://drive.google.com/file/d/1J1pY6NsHqxyEPrG622je3rF8b7dep8TC/view?usp=drive_link"
+            color="purple-400"
+            className="w-full sm:w-auto px-4 py-3 text-sm sm:px-6 sm:py-3 sm:text-base"
+          >
+            Download CV
+          </Button>
         </div>
       </div>
     </section>
